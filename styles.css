@@ -396,6 +396,9 @@ aside {
   #productDetail {
     width: 100%;
   }
+  .darken {
+    display: none;
+  }
 }
 @media (min-width: 641px) {
   .mobile-menu {

@@ -45,6 +45,8 @@ function toogleMobileMenu() {
 }
 
 function toogleCarritoAside() {
+   //cerramos cualquier darken
+   darken.classList.add('inactive');
   //si tenemos abierto menu mobile, cerrar
   const isMobileMenuClosed = mobileMenu.classList.contains("inactive");
 
