@@ -3,7 +3,7 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const menuHamIcon = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
-const aside = document.querySelector('.product-detail');
+const shoopingCartContainer = document.querySelector('#shoopingCartContainer');
 const cardContainer = document.querySelector('.cards-container');
 
 menuEmail.addEventListener('click',toogleDesktopMenu);
@@ -11,20 +11,20 @@ menuHamIcon.addEventListener('click',toogleMobileMenu);
 menuCarritoIcon.addEventListener('click',toogleCarritoAside);
 
 function toogleDesktopMenu(){
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoopingCartContainer.classList.contains('inactive');
 
     if (!isAsideClosed){
-        aside.classList.add('inactive');
+        shoopingCartContainer.classList.add('inactive');
     }
 
    desktopMenu.classList.toggle('inactive');
 }
 
 function toogleMobileMenu(){
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoopingCartContainer.classList.contains('inactive');
 
     if (!isAsideClosed){
-        aside.classList.add('inactive');
+        shoopingCartContainer.classList.add('inactive');
     }
 
     mobileMenu.classList.toggle('inactive');
@@ -43,14 +43,13 @@ function toogleCarritoAside(){
         desktopMenu.classList.add('inactive');
     }
 
-    aside.classList.toggle('inactive');
+    shoopingCartContainer.classList.toggle('inactive');
 }
 
 const productsList = [];
 productsList.push({
     name: 'Bike',
     price: 120,
-    //image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
     image: 'https://cdn.pixabay.com/photo/2013/07/13/13/43/racing-bicycle-161449_960_720.png'
 });
 
