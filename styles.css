@@ -161,7 +161,7 @@ nav {
 
 /* Aside de product detail y carrito */
 aside {
-  background: var (--white);
+  background: var(--white);
   width: 360px;
   box-sizing: border-box;
   position: absolute;
